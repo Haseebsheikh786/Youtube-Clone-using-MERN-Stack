@@ -1,0 +1,154 @@
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 111;
+}
+
+.navbarContainer {
+    display: flex;
+    background-color: rgb(0, 0, 0);
+}
+
+/* left  */
+.logo {
+    list-style: none;
+    display: flex;
+    margin-top: 1.5rem;
+    cursor: pointer;
+}
+
+.burgerIcon {
+    font-size: 1.5rem;
+    color: rgb(157, 175, 184);
+    margin-right: 2.2rem;
+    margin-top: .3rem;
+}
+
+.YoutubeIcon {
+    color: red;
+    font-size: 2rem;
+    margin-bottom: .5rem;
+}
+
+.logo b {
+    font-size: 1.4rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0 .3rem;
+    color: white;
+    text-decoration: none;
+
+}
+
+/* mid  */
+.Search {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex: 1;
+
+}
+
+.Search input {
+    width: 45vw;
+    height: 3rem;
+    border-top-left-radius: 1.3rem;
+    border-bottom-left-radius: 1.3rem;
+    background-color: rgb(24, 23, 23);
+    color: white;
+}
+
+.Search input::placeholder {
+    color: rgb(197, 186, 186);
+}
+
+.searchIcon {
+    height: 3rem;
+    font-size: 1.8rem;
+    border-top-right-radius: 1.3rem;
+    border-bottom-right-radius: 1.3rem;
+    background-color: rgb(54, 51, 51);
+    color: white;
+    width: 5rem;
+    position: absolute;
+    top: 1rem;
+    right: 21vw;
+}
+
+/* right  */
+.RightIcons {
+    list-style: none;
+    margin-right: 1rem;
+    display: flex;
+}
+
+.addVideoIcon,
+.NotiIcon {
+    font-size: 1.8rem;
+    margin: 1.6rem 1rem;
+    color: white;
+
+}
+
+.icon {
+    height: 40px;
+    width: 40px;
+    padding: 2px;
+    border-radius: 50%;
+    margin: 1.1rem 1rem;
+    overflow: hidden;
+    float: right;
+}
+
+.imageIcon {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#navLinks:hover {
+    background-color: rgb(104, 103, 103);
+}
+
+@media only screen and (max-width:550px) {
+    .Search {
+        display: none;
+    }
+
+    .navbarContainer {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .burgerIcon {
+        display: none;
+    }
+
+    .addVideoIcon,
+    .NotiIcon {
+        margin: 1.6rem .5rem;
+
+    }
+
+    .icon {
+        margin: 1.1rem .4rem;
+    }
+
+}
+
+@media only screen and (min-width:550px) and (max-width:1000px) {
+    .Search {
+        display: none;
+    }
+
+    .navbarContainer {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media only screen and (min-width:1500px) and (max-width:2652px) {
+
+    .searchIcon {
+        right: 24vw;
+    }
+}

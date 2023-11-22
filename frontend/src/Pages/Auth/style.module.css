@@ -1,0 +1,30 @@
+/* signup */
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    width: inherit;
+}
+
+.wrapper h2 {
+    margin-bottom: 15px;
+    color: white;
+}
+
+input {
+
+    padding: 18px 30px;
+    margin: 15px;
+    outline: none;
+    border: 1px solid #363131;
+    border-radius: 10px;
+    font-size: 20px;
+
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+}
+ 

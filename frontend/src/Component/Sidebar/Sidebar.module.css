@@ -1,0 +1,57 @@
+ .Sidebar {
+     display: flex;
+     flex-direction: column;
+     list-style: none;
+     font-size: .7rem;
+     flex: .1;
+     position: sticky;
+     top: 6rem;
+ }
+
+ .Sidebar li {
+     margin-bottom: .8rem;
+ }
+
+ .icon {
+     font-size: 1.5rem;
+     margin: .4rem 0;
+     color: white;
+ }
+
+ .Sidebar p {
+     color: white;
+ }
+
+ .link {
+     text-decoration: none;
+ }
+
+ @media only screen and (max-width:550px) {
+     .Sidebar {
+         position: fixed;
+         top: 90vh;
+         /* left: 0; */
+         width: 100%;
+         background-color: #1d1c1c;
+         color: white;
+         padding: 15px;
+         flex-direction: row;
+         text-align: center;
+         z-index: 111;
+
+     }
+
+     .Sidebar .link {
+         padding: 0 6vw;
+     }
+
+
+     .icon {
+         font-size: 2rem;
+         margin: .4rem 0;
+     }
+
+     .Sidebar p {}
+
+
+ }
